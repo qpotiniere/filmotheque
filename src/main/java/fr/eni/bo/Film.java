@@ -54,11 +54,11 @@ public class Film {
 		this.annee = annee;
 	}
 	
-	public Genre getStyle() {
+	public Genre getGenre() {
 		return genre;
 	}
 	
-	public void setStyle(Genre genre) {
+	public void setGenre(Genre genre) {
 		this.genre = genre;
 	}
 	

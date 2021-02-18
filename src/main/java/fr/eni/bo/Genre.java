@@ -28,7 +28,7 @@ public class Genre {
 	}
 	@Override
 	public String toString() {
-		return "Style [id=" + id + ", libelle=" + libelle + "]";
+		return "Genre [id=" + id + ", libelle=" + libelle + "]";
 	}
 	
 	

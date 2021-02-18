@@ -10,14 +10,30 @@
 		<table>
 		    <thead>
 		        <tr>
-		            <th> Title </th>
-		            <th> Author </th>
+		            <th> Titre </th>
+		            <th> Année </th>
+		            <th> Genre </th>
+		            <th> Réalisateur </th>
+		            <th> Durée </th>
+		            <th> Acteurs </th>
+		            <th> Synopsis </th>
 		        </tr>
 		    </thead>
 		    <tbody>
 			    <tr th:each="film : ${films}">
-		            <td><span th:text="${film.titre}"> Titre </span></td>
-		            <td><span th:text="${film.annee}"> Année </span></td>
+		            <td><span th:text="${film.titre}"> </span></td>
+		            <td><span th:text="${film.annee}"> </span></td>
+		            <td><span th:text="${film.genre.libelle}"> </span></td>
+		            <td>
+		            	<span th:text="${film.real.nom}"></span>
+		            	<span th:text="${film.real.prenom}"></span>
+		            </td>
+		            <td><span th:text="${film.duree}"> </span></td>
+		            <td><span th:each="acteur : ${film.acteurs}"> 
+						<span th:text="${acteur.nom}"></span>
+						<span th:text="${acteur.prenom}"></span>					
+					</span></td>
+		            <td><span th:text="${film.synopsis}"> </span></td>
 	        	</tr>
 		    </tbody>
 	</table>

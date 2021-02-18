@@ -47,7 +47,7 @@ public class Participant {
 
 	@Override
 	public String toString() {
-		return "Personne [id=" + id + ", nom=" + nom + ", prenom=" + prenom + "]";
+		return "Participant [id=" + id + ", nom=" + nom + ", prenom=" + prenom + "]";
 	}
 	
 	
