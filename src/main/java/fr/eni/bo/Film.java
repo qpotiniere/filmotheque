@@ -10,9 +10,9 @@ public class Film {
 	
 
 	private Genre genre;
-	private Realisateur real;
+	private Participant real;
 	private String duree;
-	private List<Acteur> acteurs;
+	private List<Participant> acteurs;
 	
 	private String synopsis;
 		
@@ -20,7 +20,7 @@ public class Film {
 
 	}
 
-	public Film(String titre, int annee, Genre genre, Realisateur real, String duree, List<Acteur> acteurs, String synopsis) {
+	public Film(String titre, int annee, Genre genre, Participant real, String duree, List<Participant> acteurs, String synopsis) {
 		this.titre = titre;
 		this.annee = annee;
 		this.genre = genre;
@@ -62,7 +62,7 @@ public class Film {
 		this.genre = genre;
 	}
 	
-	public Realisateur getReal() {
+	public Participant getReal() {
 		return real;
 	}
 	
@@ -78,11 +78,11 @@ public class Film {
 		this.duree = duree;
 	}
 	
-	public List<Acteur> getActeurs() {
+	public List<Participant> getActeurs() {
 		return acteurs;
 	}
 	
-	public void setActeurs(List<Acteur> acteurs) {
+	public void setActeurs(List<Participant> acteurs) {
 		this.acteurs = acteurs;
 	}
 	

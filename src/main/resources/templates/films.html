@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="UTF-8">
 		<title>Filmothèque</title>
 	</head>
-	
+
 	<body>
+		<p> Je fais des tests</p>
 		<table>
-    <thead>
-        <tr>
-            <th> Title </th>
-            <th> Author </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr th:each="film : ${films}">
-            <td><span th:text="${film.titre}"> Titre </span></td>
-            <td><span th:text="${film.annee}"> Année </span></td>
-        </tr>
-    </tbody>
-</table>
+		    <thead>
+		        <tr>
+		            <th> Title </th>
+		            <th> Author </th>
+		        </tr>
+		    </thead>
+		    <tbody>
+			    <tr th:each="film : ${films}">
+		            <td><span th:text="${film.titre}"> Titre </span></td>
+		            <td><span th:text="${film.annee}"> Année </span></td>
+	        	</tr>
+		    </tbody>
+	</table>
 	</body>
 </html>
