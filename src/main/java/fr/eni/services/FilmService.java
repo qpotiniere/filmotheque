@@ -1,15 +1,17 @@
 package fr.eni.services;
 
+import java.util.ArrayList;
+
 import fr.eni.bo.Avis;
 import fr.eni.bo.Film;
 
 public interface FilmService {
 	
-	void ajouterUnFilm(Film film);
+	public void ajouterUnFilm(Film film);
 	
-	void ajouterUnAvis(Avis avis);
+	public void ajouterUnAvis(Avis avis);
 	
-	void detailFilm(int idFilm);
+	public void detailFilm(int idFilm);
 	
-	void listFilm();
+	public ArrayList<Film> listFilm();
 }
