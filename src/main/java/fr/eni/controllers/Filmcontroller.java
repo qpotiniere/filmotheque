@@ -22,4 +22,10 @@ public class Filmcontroller {
 	    model.addAttribute("films", service.listFilm());
 	    return "films";
 	}
+	
+	@GetMapping({"/detailFilm"})
+	public String detail(Model model) {
+	    model.addAttribute("films", service.detailFilm(1));
+	    return "detailFilm";
+	}
 }

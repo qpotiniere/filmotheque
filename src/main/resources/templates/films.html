@@ -6,7 +6,6 @@
 	</head>
 
 	<body>
-		<p> Je fais des tests</p>
 		<table>
 		    <thead>
 		        <tr>
@@ -34,8 +33,9 @@
 						<span th:text="${acteur.prenom}"></span>					
 					</span></td>
 		            <td><span th:text="${film.synopsis}"> </span></td>
+		            <td><a href="/films/detailFilm">Afficher les détails</a></td>
 	        	</tr>
 		    </tbody>
-	</table>
+		</table>
 	</body>
 </html>

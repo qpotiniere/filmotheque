@@ -20,7 +20,8 @@ public class Film {
 
 	}
 
-	public Film(String titre, int annee, Genre genre, Participant real, String duree, List<Participant> acteurs, String synopsis) {
+	public Film(int id, String titre, int annee, Genre genre, Participant real, String duree, List<Participant> acteurs, String synopsis) {
+		this.id = id;
 		this.titre = titre;
 		this.annee = annee;
 		this.genre = genre;

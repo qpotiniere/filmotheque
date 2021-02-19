@@ -11,7 +11,7 @@ public interface FilmService {
 	
 	public void ajouterUnAvis(Avis avis);
 	
-	public void detailFilm(int idFilm);
+	public Film detailFilm(int idFilm);
 	
 	public ArrayList<Film> listFilm();
 }
