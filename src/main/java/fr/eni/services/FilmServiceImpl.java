@@ -17,18 +17,8 @@ public class FilmServiceImpl implements FilmService {
 	}
 
 	@Override
-	public void ajouterUnAvis(Avis avis) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public Film detailFilm(int idFilm) {
-		ArrayList<Participant> acteurs = new ArrayList<Participant>();
-		acteurs.add(new Participant("DiCaprio", "Leonardo"));
-		acteurs.add(new Participant("Winselt", "Kate"));
-		Film film = new Film(0 ,"Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse");
-		return film;
+		return listFilm().get(idFilm);
 	}
 
 	@Override
@@ -37,9 +27,16 @@ public class FilmServiceImpl implements FilmService {
 		ArrayList<Participant> acteurs = new ArrayList<Participant>();
 		acteurs.add(new Participant("DiCaprio", "Leonardo"));
 		acteurs.add(new Participant("Winselt", "Kate"));
-		films.add(new Film(0, "Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
-		films.add(new Film(1,"Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
-		films.add(new Film(2,"Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film(0,"Titanic0", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film(1,"Titanic1", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film(2,"Titanic2", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
 		return films;
+	}
+	
+	//A faire si le temps
+	@Override
+	public void ajouterUnAvis(Avis avis) {
+		// TODO Auto-generated method stub
+
 	}
 }
