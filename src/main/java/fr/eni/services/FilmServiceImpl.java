@@ -36,6 +36,9 @@ public class FilmServiceImpl implements FilmService {
 		acteurs.add(new Participant("Winselt", "Kate"));
 		
 		films.add(new Film("Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film("Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film("Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+
 		return films;
 	}
 }
