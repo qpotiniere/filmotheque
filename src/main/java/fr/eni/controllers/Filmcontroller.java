@@ -1,5 +1,6 @@
 package fr.eni.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,16 +12,19 @@ import fr.eni.services.FilmService;
 @RequestMapping("/films")
 public class Filmcontroller {
 	
+	@Autowired
 	private FilmService service;
-	
-	public Filmcontroller(FilmService service) {
-		this.service = service;
-	}
 
 	@GetMapping({"/list"})
 	public String films(Model model) {
 	    model.addAttribute("films", service.listFilm());
 	    return "films";
+	}
+	
+	@GetMapping({"/ajoutFilm"})
+	public String add(Model model) {
+	    model.addAttribute("films", service.ajouterUnFilm());
+	    return "ajoutFilm";
 	}
 	
 	@GetMapping({"/detailFilm"})

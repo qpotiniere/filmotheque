@@ -11,9 +11,9 @@ import fr.eni.bo.Participant;
 public class FilmServiceImpl implements FilmService {
 
 	@Override
-	public void ajouterUnFilm(Film film) {
+	public Film ajouterUnFilm() {
+		return null;
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override
@@ -37,8 +37,9 @@ public class FilmServiceImpl implements FilmService {
 		ArrayList<Participant> acteurs = new ArrayList<Participant>();
 		acteurs.add(new Participant("DiCaprio", "Leonardo"));
 		acteurs.add(new Participant("Winselt", "Kate"));
-		
-		films.add(new Film(0 ,"Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film(0, "Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film(1,"Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
+		films.add(new Film(2,"Titanic", 2005, new Genre(1,"romantic"), new Participant("James", "Cameron") , "1h30 min", acteurs , "En 1997, l'épave du Titanic est l'objet d'une exploration fièvreuse"));
 		return films;
 	}
 }

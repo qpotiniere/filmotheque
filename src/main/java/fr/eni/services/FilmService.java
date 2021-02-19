@@ -7,7 +7,7 @@ import fr.eni.bo.Film;
 
 public interface FilmService {
 	
-	public void ajouterUnFilm(Film film);
+	public Film ajouterUnFilm();
 	
 	public void ajouterUnAvis(Avis avis);
 	
